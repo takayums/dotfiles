@@ -1,0 +1,50 @@
+# Git Initial
+.git
+
+# Ignore all backup files
+*~
+*.bak
+*.tmp
+
+# Ignore specific configuration files with sensitive data
+# Contoh file yang sering berisi data rahasia, sesuaikan dengan kebutuhan Anda
+~/.bashrc
+~/.bash_profile
+~/.zshrc
+~/.config/alacritty/themes
+
+# Ignore SSH keys and configurations
+~/.ssh/
+~/.ssh/*
+
+# Ignore GPG keys and configurations
+~/.gnupg/
+
+# Ignore sensitive environment files
+.env
+.env.local
+
+# Ignore package manager configurations (npm, yarn, etc.)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files created by the editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore log files
+*.log
+
+# Ignore local configuration files for various applications
+.config/Code/User/settings.json
+.config/Code/User/keybindings.json
+.config/Code/User/globalStorage/
+.config/JetBrains/
+

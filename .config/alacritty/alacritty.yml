@@ -1,0 +1,46 @@
+live_config_reload: true
+
+font:
+  normal:
+    family: "FiraCode Nerd Font"
+    style: Regular
+  bold:
+    family: "FiraCode Nerd Font"
+    style: Bold
+  italic:
+    family: "VictorMono Nerd Font"
+    style: Italic
+  bold_italic:
+    family: "VictorMono Nerd Font"
+    style: Bold Italic
+  size: 12
+
+window:
+  padding:
+    x: 10
+    y: 10
+  dimensions:
+    columns: 120
+    lines: 40
+  position:
+    x: 300
+    y: 150
+  opacity: 0.9
+  blur: true
+  decorations: "None"
+
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+key_bindings: 
+  - {key: F11, action: ToggleFullscreen}
+
+shell:
+  program: /usr/bin/zsh
+  args:
+    - -c
+    - "tmux"
+
+import:
+  - ~/.config/alacritty/themes/themes/tokyo-night-storm.yaml

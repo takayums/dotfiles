@@ -48,3 +48,4 @@ Thumbs.db
 .config/Code/User/globalStorage/
 .config/JetBrains/
 
+.stow-local-ignore

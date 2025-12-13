@@ -11,6 +11,8 @@ return {
         "flake8",
         "prettierd",
         "black",
+        "gofumpt",
+        "fish_indent",
       },
       ui = {
         icons = {

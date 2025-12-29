@@ -12,7 +12,6 @@ return {
         "prettierd",
         "black",
         "gofumpt",
-        "fish_indent",
       },
       ui = {
         icons = {

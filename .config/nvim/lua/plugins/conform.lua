@@ -14,7 +14,7 @@ return {
         sh = { "shfmt" },
         python = { "black" },
         javascript = { "prettierd", "prettier", stop_after_first = true },
-        go = { "gofumpt" },
+        go = { "gofumpt", "goimports" },
       },
     }
     return opts

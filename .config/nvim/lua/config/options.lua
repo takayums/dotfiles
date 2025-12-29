@@ -4,4 +4,5 @@
 local opt = vim.opt
 opt.clipboard = "unnamedplus"
 opt.mouse = ""
+opt.mousescroll = "ver:0,hor:0"
 opt.wrap = true

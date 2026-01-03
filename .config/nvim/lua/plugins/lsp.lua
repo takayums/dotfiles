@@ -12,6 +12,7 @@ return {
         "prettierd",
         "black",
         "gofumpt",
+        "eslint_d",
       },
       ui = {
         icons = {
@@ -23,22 +24,51 @@ return {
     },
   },
   {
-    {
-      "mason-org/mason-lspconfig.nvim",
-      opts = {
-        ensure_installed = {
-          "gopls",
-          "pyright",
-          "tailwindcss",
-          "cssls",
-          "astro",
-          "emmet_ls",
-          "lua_ls",
-          "ts_ls",
-          "jsonls",
-        },
+    "mason-org/mason-lspconfig.nvim",
+    opts = {
+      ensure_installed = {
+        "gopls",
+        "pyright",
+        "tailwindcss",
+        "cssls",
+        "astro",
+        "emmet_ls",
+        "lua_ls",
+        "ts_ls",
+        "jsonls",
+        "volar",
       },
-      config = function() end,
+    },
+    config = function() end,
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        tsserver = {
+          settings = {
+            completions = {
+              completFunctionCalls = true,
+            },
+          },
+        },
+        volar = {
+          filetypes = {
+            "vue",
+            "javascript",
+            "typescript",
+          },
+          settings = {
+            vue = {
+              hybridMode = true,
+            },
+          },
+        },
+        eslint = {},
+        html = {},
+        cssls = {},
+        jsonls = {},
+      },
     },
   },
 }

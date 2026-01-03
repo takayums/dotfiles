@@ -15,6 +15,7 @@ return {
         "regex",
         "tsx",
         "typescript",
+        "vue",
         "vim",
         "yaml",
         "go",

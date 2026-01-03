@@ -3,7 +3,7 @@ return {
   opts = function()
     local opts = {
       default_format_opts = {
-        timeout_ms = 2000,
+        timeout_ms = 1000,
         async = false,
         quiet = false,
         lsp_format = "fallback",
@@ -13,9 +13,18 @@ return {
         fish = { "fish_indent" },
         sh = { "shfmt" },
         python = { "black" },
-        javascript = { "prettierd", "prettier", stop_after_first = true },
+        html = { "prettier" },
+        css = { "prettier" },
+        json = { "prettier" },
+        javascript = { "prettier" },
+        typescript = { "prettier" },
+        javascriptreact = { "prettier" },
+        typescriptreact = { "prettier" },
+        vue = { "prettier" },
+        markdown = { "prettier" },
         go = { "gofumpt", "goimports" },
       },
+      format_on_save = true,
     }
     return opts
   end,

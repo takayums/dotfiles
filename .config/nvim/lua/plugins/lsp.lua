@@ -13,6 +13,8 @@ return {
         "black",
         "gofumpt",
         "eslint_d",
+        "typescript-language-server",
+        "vue-language-server",
       },
       ui = {
         icons = {
@@ -36,7 +38,6 @@ return {
         "lua_ls",
         "ts_ls",
         "jsonls",
-        "volar",
       },
     },
     config = function() end,
@@ -57,6 +58,8 @@ return {
             "vue",
             "javascript",
             "typescript",
+            "javascriptreact",
+            "typescriptreact",
           },
           settings = {
             vue = {

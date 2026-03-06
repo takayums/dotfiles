@@ -6,3 +6,12 @@ opt.clipboard = "unnamedplus"
 opt.mouse = ""
 opt.mousescroll = "ver:0,hor:0"
 opt.wrap = true
+
+-- Python
+vim.g.lazyvim_python_lsp = "pyright"
+vim.g.lazyvim_python_ruff = "ruff"
+vim.filetype.add({
+  pattern = {
+    [".*/templates/.*%.html"] = "htmldjango",
+  },
+})

@@ -8,20 +8,30 @@ return {
       lsp_format = "fallback",
     },
     formatters_by_ft = {
+      -- lua
       lua = { "stylua" },
+      -- shell script
       sh = { "shfmt" },
-      python = { "black" },
+      -- html  and css
       html = { "prettier" },
       css = { "prettier" },
-      json = { "prettier" },
-      prisma = { "prettier" },
+      -- Python Django
+      python = { "black" },
+      htmldjango = { "djlint" },
+      -- Javascript
       javascript = { "prettier" },
       typescript = { "prettier" },
       javascriptreact = { "prettier" },
       typescriptreact = { "prettier" },
       vue = { "prettier" },
-      markdown = { "prettier" },
+      -- go
       go = { "gofumpt", "goimports" },
+      -- makrdown
+      markdown = { "prettier" },
+      -- json
+      json = { "prettier" },
+      -- prisma
+      prisma = { "prettier" },
     },
     format_on_save = true,
   },

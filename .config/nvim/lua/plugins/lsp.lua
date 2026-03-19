@@ -57,7 +57,6 @@ return {
         -- astro
         "astro",
         -- emmet
-        "emmet_ls",
         -- lua
         "lua_ls",
         -- javascript
@@ -98,6 +97,26 @@ return {
         },
         -- Linting
         eslint = {},
+        -- Emmet_ls
+        emmet_ls = {
+          filetypes = {
+            "html",
+            "css",
+            "scss",
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+            "vue",
+          },
+          init_options = {
+            html = {
+              options = {
+                ["bem.enabled"] = true,
+              },
+            },
+          },
+        },
         -- Html, Css
         html = {},
         cssls = {},

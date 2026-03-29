@@ -32,6 +32,9 @@ return {
       json = { "prettier" },
       -- prisma
       prisma = { "prettier" },
+      -- laravel php
+      php = { "prettier" },
+      blade = { "prettier" },
     },
     format_on_save = true,
   },

@@ -20,6 +20,8 @@ return {
         "yaml",
         "go",
         "prisma",
+        "php",
+        "blade",
       },
     },
   },

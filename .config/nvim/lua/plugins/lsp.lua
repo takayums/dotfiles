@@ -7,6 +7,7 @@ return {
       ensure_installed = {
         -- lua
         "stylua",
+        "lua-language-server",
         -- shell
         "shellcheck",
         "shfmt",
@@ -33,6 +34,9 @@ return {
         "clangd",
         -- treesitter
         "tree-sitter-cli",
+        -- Php Laravel
+        "intelephense",
+        "php-cs-fixer",
       },
       ui = {
         icons = {
@@ -124,6 +128,8 @@ return {
         jsonls = {},
         -- Prisma
         prismals = {},
+        -- Php
+        intelephense = {},
         -- Python Django
         pyright = {},
         djls = {
